@@ -13,7 +13,7 @@ const Portfolio = () => {
         fetch('https://personal-825b.restdb.io/rest/projects', {
             method: 'GET',
             headers: {
-                'x-apikey': `${process.env.DB_API_KEY}`
+                'x-apikey': `${process.env.REACT_APP_DB_API_KEY}`
             }
         })
             .then((res) => {
